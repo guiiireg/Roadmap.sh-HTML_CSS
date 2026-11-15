@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
 *,
 *::before,
 *::after {
@@ -17,6 +19,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: 'Muli', sans-serif;
 }
 
 img,
