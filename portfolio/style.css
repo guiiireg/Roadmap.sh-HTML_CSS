@@ -143,7 +143,6 @@ main {
   padding-block: 3rem;
 }
 
-
 main > section:not(#hero) {
   display: grid;
   gap: 1rem;
@@ -176,6 +175,32 @@ main > section:nth-of-type(2) li {
 main > section:nth-of-type(2) li:hover {
   border-color: var(--color-accent);
   background-color: var(--color-highlight);
+}
+
+main > section:only-child {
+  grid-column: 1 / -1;
+}
+
+main > section:only-child:has(article) {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.5rem;
+  align-content: start;
+}
+
+main > section:only-child:has(article) article {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-secondary);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgb(15 163 177 / 0.15);
+  display: grid;
+  gap: 1rem;
+  align-content: start;
 }
 
 section ul {
