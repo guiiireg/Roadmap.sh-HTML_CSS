@@ -107,3 +107,14 @@ footer {
   padding-block: 2rem;
   font-size: 0.875rem;
 }
+
+#hero {
+  gap: 1rem;
+  padding-block: 5rem;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
